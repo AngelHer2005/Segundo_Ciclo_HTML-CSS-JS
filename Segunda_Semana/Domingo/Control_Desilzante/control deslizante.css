@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 5;
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+.galeria{
+    padding: 16px;
+}
+.imagen principal{
+    width: 100px;
+    object-fit: cover;
+    display: block;
+}
+.lista-imagenes img{
+    width: 100%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    display: block;
+}
+.lista-imagenes{
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;
+}

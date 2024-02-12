@@ -1,0 +1,20 @@
+body{
+    background-image: url("https://i.kym-cdn.com/entries/icons/original/000/044/272/joseluis1.jpg"); 
+    background-size: 100% 145%;
+
+}
+h1{
+    color: red;
+}
+h3{
+    color: green;
+}
+p{
+    color:brown;
+}
+#boton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }

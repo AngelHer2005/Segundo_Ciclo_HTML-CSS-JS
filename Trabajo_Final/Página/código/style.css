@@ -1,0 +1,51 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+.contenedor {
+    width: 1620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: center;
+}
+button{
+    cursor:pointer
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+}
+
+#poema{
+    font-family: Arial,sans-serif;
+    size:1.5em; 
+}
+
+#imagensinC {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+}
+#imagentamaño{
+    width: 200px;
+    height: 200px;
+}
+#ocultar{
+    display: none;
+}
+ul{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+}
+#crear{
+    text-align: left;
+}

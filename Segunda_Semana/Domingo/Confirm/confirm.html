@@ -1,0 +1,13 @@
+<script>
+    function confirmacion(){
+        var pregunta=confirm("¿Deseas visitar la pagina principal?")
+        if (pregunta){
+            alert("Te envío ahí rapidamente")
+            window.location = "https://www.senati.edu.pe/"
+        }
+        else{
+            alert("Quizás en otro momento...\n Gracias de todas formas.")
+        }
+    }
+</script>
+<button type="button" onclick="confirmacion()">Probar confirm</button>

@@ -1,0 +1,39 @@
+#header{
+    margin: auto;
+    width: 500px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+ul{
+    list-style: none;
+}
+.menu li a{
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    cursor:default;
+}
+.menu li a:hover{
+    background-color: rgb(241, 88, 88);
+}
+.menu>li{
+    float: left;
+}
+.menu li ul{
+    display: none;
+    position:absolute;
+}
+.menu li:hover >ul{
+    display: block;
+}
+img{
+    padding:0;
+    width: 150px;
+    height: 50px;
+}
+img:hover{
+    transition: all 0.6s ease; 
+    filter: brightness(50%);
+}

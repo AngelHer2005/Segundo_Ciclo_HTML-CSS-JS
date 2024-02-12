@@ -1,0 +1,25 @@
+h1{
+    color:red;
+    font-size: 5em
+}
+ol{
+    font-size: 1.5em;
+    color:aqua;
+}
+.p{
+    font-size: 1.5em;
+    font-family: Courier;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-align: left;
+    text-indent: 30px;
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid;
+}
+.p1{
+    font-size: 1.5em;
+}

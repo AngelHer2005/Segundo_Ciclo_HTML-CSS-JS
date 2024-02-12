@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web</title>
+    <style>
+        body {
+            background-image: url("senati2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <center><p style="color: blue; font-size:3em;">Bienvenidos SENATINOS DE CORAZÓN</p>
+    <video width="500" height="350" controls autoplay muted loop>
+        <source src="Y2meta.app-SENATI - El futuro está en nuestras manos-(1080p).mp4" type="video/mp4">
+        <track src="subtitles_es.vtt" kind="subtitles" srclang="sp" label="spanish">
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="english">
+        Su navegador no soporta videos
+    </video>
+    <br>
+    <!-- <iframe width="956" height="538" src="https://www.youtube.com/watch?v=N03hHYdFg2s" frameborder="0"> -->
+    <!-- </iframe> -->
+    <br><audio controls loop>
+        <source src="Y2meta.app-SENATI - El futuro está en nuestras manos-(1080p) (online-audio-converter.com).mp3" type="audio/mpeg">
+        Su navegador no soporta audios
+    </audio>
+    <br><br><form>
+        <!-- Ingresa un textfield con tipo texto, nombre codigo e id codigo -->
+        <!-- <input type="text" name="codigo" id="codigo"> -->
+
+        <!-- Agrega el valor por defecto "televisor" -->
+        <!-- <input type="text" name="codigo" id="codigo" value="televisor">-->
+
+        <!-- Ingresa el valor por defecto "Ingrese cantidad", pero no entra en el input en sí -->
+        <!-- <input type="text" name="codigo" id="codigo" placeholder="Ingrese cantidad">  -->
+        
+        <!-- Agrega un label al costado del input cuyo id le colocamos -->
+        <!-- <label for="codigo">Código de Producto</label> -->
+
+        <!-- RadioButtons -->
+        <input type="radio" id="dni" name="tipo_documento">
+        <label for="dni">DNI</label>
+        <input type="radio" id="pasaporte" name="tipo_documento">
+        <label for="pasaporte">Pasaporte</label>
+        <input type="radio" id="otro" name="tipo_documento">
+        <label for="otro">Otro</label>
+        
+        <button id="boton" style="background-color: red; color: black">Dale click</button>
+        <script>
+            let valor=document.getElementsByName("tipo_documento")
+            let boton=document.getElementById("boton")
+            boton.addEventListener("click",function(){
+                let seleccion
+                for (let i = 0; i < valor.length; i++) {
+                if(valor[i].checked){
+                    seleccion = document.querySelector("label[for=" + valor[i].id + "]").innerHTML;
+                    break
+                }
+            }
+            if (seleccion) {
+                alert("Has seleccionado: " + seleccion);
+            } else {
+                alert("No has seleccionado ninguna opción.");
+            }
+            })
+        </script>
+    </form>
+</center>
+</body>
+</html>

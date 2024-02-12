@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abriendo y cerando ventanas con JavaScript SENATI</title>
+    <script>
+        var nuevaVentana;
+        function nueva(){
+            nuevaVentana=window.open("", "segundaPag",
+            "toolbar=yes, location=no, menubar=yes, resizable=yes"+"width=60, height=50");
+            nuevaVentana.document.write("<html><had><title>"+"Segunda ventana </title></head>\n");
+            nuevaVentana.document.write("<body><form>\n");
+            nuevaVentana.document.write("<input type='button'"+ "value='cerrar' onClick='window.close();'>\n")
+            nuevaVentana.document.write("</form>\n");
+            nuevaVentana.document.close();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="abrir" onclick="nueva();"><br>
+    </form>
+</body>
+</html>
